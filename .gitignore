@@ -5,9 +5,19 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+# Environments
+.venv/
+env/
+venv/
+ENV/
 
+# OS files
+.DS_Store
+Thumbs.db
 # Python
-__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
 *.py[cod]
 *.pyo
 *.pyd

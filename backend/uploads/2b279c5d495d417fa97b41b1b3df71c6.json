@@ -1,0 +1,31 @@
+{
+  "upload_id": "2b279c5d495d417fa97b41b1b3df71c6",
+  "file_name": "ISO_0001.fasta",
+  "sequence_id": "ISO_0001|species=synthetic_bacterium|origin=simulated_from_reference",
+  "sequence_length": 1587,
+  "gc_content": 0.4146,
+  "mapped_genes": [
+    "gyrA",
+    "parC",
+    "blaTEM"
+  ],
+  "mutations": [
+    "gyrA_S83L",
+    "parC_S80I"
+  ],
+  "translated_protein_preview": {
+    "gyrA": "EMVFNWGPYHQAIRCKSDLTEMVF...",
+    "parC": "IRCKSDLTEMVFNWGPYHQAIRCK...",
+    "blaTEM": "NWGPYHQAIRCKSDLTEMVFNWGP..."
+  },
+  "structure_features": [
+    0.397,
+    0.3,
+    0.1485,
+    0.1091,
+    0.1455,
+    0.2485,
+    0.9167,
+    0.75
+  ]
+}

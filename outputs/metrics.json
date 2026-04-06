@@ -1,0 +1,26 @@
+{
+  "accuracy": 0.6667,
+  "weighted_f1": 0.6657,
+  "train_samples": 540,
+  "test_samples": 180,
+  "feature_length": 206,
+  "class_distribution": {
+    "Low": 232,
+    "Medium": 189,
+    "High": 157,
+    "Sensitive": 142
+  },
+  "cross_entropy_note": "MLPClassifier optimizes multiclass log-loss, i.e. cross-entropy for classification.",
+  "loss_curve_tail": [
+    0.11280369731759202,
+    0.1064584671208682,
+    0.10239662322440483,
+    0.09880921826322853,
+    0.09374961151623684,
+    0.08985733736361785,
+    0.08652310064610834,
+    0.08399849237932806,
+    0.08038666367489421,
+    0.07828635634017633
+  ]
+}

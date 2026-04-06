@@ -1,0 +1,5 @@
+drug_name,drug_class,pubchem_cid,smiles,pubchem_url
+Ciprofloxacin,fluoroquinolone,2764,C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/2764
+Levofloxacin,fluoroquinolone,149096,C[C@H]1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/149096
+Ampicillin,beta_lactam,6249,CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](C3=CC=CC=C3)N)C(=O)O)C,https://pubchem.ncbi.nlm.nih.gov/compound/6249
+Tetracycline,tetracycline,54675776,CC1(C2CC3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O,https://pubchem.ncbi.nlm.nih.gov/compound/54675776

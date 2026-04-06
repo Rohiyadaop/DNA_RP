@@ -1,0 +1,5 @@
+database,entity,identifier,url,usage,notes
+NCBI,Reference FASTA fragments for gyrA/parC-like bacterial targets,Local curated subset,https://www.ncbi.nlm.nih.gov/,Reference genes and reference genome template,"Project ships a local, deterministic FASTA inspired by NCBI gene entries for offline execution."
+CARD,Resistance gene ontology subset,"gyrA, parC, blaTEM, tetA",https://card.mcmaster.ca/,Gene mapping and mechanism labels,Small simulated CARD-style catalog for offline gene identification.
+PubChem,Antibiotic structures,"CID 2764, 149096, 6249, 54675776",https://pubchem.ncbi.nlm.nih.gov/,SMILES strings converted to Morgan fingerprints by RDKit,Curated SMILES and CID references embedded locally for reproducible runs.
+Experimental conditions,"Temperature, pH, growth medium",Simulated lab metadata,local://simulated_experiments,Environmental feature vector,Controlled synthetic metadata designed to mimic CPU-friendly in vitro experiments.

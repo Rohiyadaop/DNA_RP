@@ -1,0 +1,5 @@
+gene_name,aro_family,mechanism,card_url,preferred_drug_class
+gyrA,quinolone resistance-determining region target,target alteration,https://card.mcmaster.ca/,fluoroquinolone
+parC,quinolone resistance-determining region target,target alteration,https://card.mcmaster.ca/,fluoroquinolone
+blaTEM,beta-lactamase family,antibiotic inactivation,https://card.mcmaster.ca/ontology/36010,beta_lactam
+tetA,MFS antibiotic efflux pump,antibiotic efflux,https://card.mcmaster.ca/ontology/36708,tetracycline

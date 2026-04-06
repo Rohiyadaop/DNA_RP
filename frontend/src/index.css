@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #10231d;
+  background:
+    radial-gradient(circle at top left, rgba(239, 163, 80, 0.18), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(24, 111, 113, 0.16), transparent 26%),
+    linear-gradient(135deg, #f6f0e7 0%, #eef3eb 52%, #e9f4f4 100%);
+  font-family: "Aptos", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #10231d;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(16, 35, 29, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 35, 29, 0.05) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.page-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.4)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0));
+}
+
+.title-font {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.soft-panel {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(16, 35, 29, 0.08);
+  box-shadow: 0 22px 44px rgba(16, 35, 29, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.nav-chip {
+  transition: all 0.18s ease;
+}

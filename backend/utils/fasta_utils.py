@@ -1,8 +1,6 @@
 from __future__ import annotations
-
 import io
 from typing import Tuple
-
 from Bio import SeqIO
 from Bio.Seq import Seq
 

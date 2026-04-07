@@ -320,7 +320,7 @@ def run_phase2() -> dict:
     print(f"  Data Source        : {data_source}")
     print(f"\n  Output saved       : {OUTPUT_FILE}")
     print("─" * 55)
-    
+    run_phase3()
     return output
 
 
@@ -329,7 +329,7 @@ if __name__ == "__main__":
         result = run_phase2()
         print("\n✅ Phase 2 complete! Run Phase 3 next:")
         print("   python phase3_esmfold.py")
-        run_phase3()
+        
     except FileNotFoundError as e:
         print(f"\n❌ File Error: {e}")
         sys.exit(1)

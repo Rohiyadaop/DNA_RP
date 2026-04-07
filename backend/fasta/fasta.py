@@ -253,6 +253,7 @@ def run_phase1(fasta_input: str) -> dict:
             print(f"  ⚠ {w}")
     print(f"\n  Output saved   : {OUTPUT_FILE}")
     print("─" * 55)
+    run_phase2()
     return output
 
 
@@ -280,7 +281,7 @@ if __name__ == "__main__":
         result = run_phase1(fasta_input)
         print("\n✅ Phase 1 complete! Run Phase 2 next:")
         print("   python phase2_card_lookup.py")
-        run_phase2()
+        
     except ValueError as e:
         print(f"\n❌ Input Error: {e}")
         sys.exit(1)

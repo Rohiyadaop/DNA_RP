@@ -395,7 +395,7 @@ def run_phase4() -> dict:
     print(f"\n  SDF File          : {sdf_path}")
     print(f"  JSON Output       : {OUTPUT_FILE}")
     print("─" * 55)
-    
+    run_phase5()
     return output
 
 
@@ -415,7 +415,7 @@ if __name__ == "__main__":
         result = run_phase4(drug_name)
         print("\n✅ Phase 4 complete! Run Phase 5 next:")
         print("   python phase5_diffdock.py")
-        run_phase5()
+        
     except ValueError as e:
         print(f"\n❌ Drug Error: {e}")
         sys.exit(1)

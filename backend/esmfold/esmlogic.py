@@ -410,7 +410,7 @@ def run_phase3() -> dict:
     print(f"    → Browser : https://molstar.org/viewer  (drag & drop the .pdb file)")
     print(f"    → Desktop : PyMOL or UCSF ChimeraX (free for academic use)")
     print("─" * 55)
-    
+    run_phase4()
     return output
 
 
@@ -420,7 +420,7 @@ if __name__ == "__main__":
         print("\n✅ Phase 3 complete! Run Phase 4 next:")
         print("   python phase4_pubchem.py <drug_name>")
         print("   Example: python phase4_pubchem.py ciprofloxacin")
-        run_phase4()
+        
     except FileNotFoundError as e:
         print(f"\n❌ File Error: {e}")
         sys.exit(1)

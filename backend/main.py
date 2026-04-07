@@ -6,7 +6,7 @@ from pathlib import Path
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.model.service import ResistancePredictionService
+from model.service import ResistancePredictionService
 from backend.utils.schemas import PredictionRequest, PredictionResponse, UploadFastaResponse
 
 

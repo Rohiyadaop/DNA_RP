@@ -50,3 +50,5 @@ class PredictionResponse(BaseModel):
     binding_pose_preview: str
     probability_breakdown: Dict[str, float]
     message: str
+    protein_pdb: str
+    docked_complex_pdb: str

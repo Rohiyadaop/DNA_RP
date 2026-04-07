@@ -90,3 +90,21 @@ async def predict(request: PredictionRequest) -> PredictionResponse:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+
+@app.get("/structure")
+async def get_structure(upload_id: str) -> dict:
+    try:
+        pdb_text = get_service().get_structure_pdb(upload_id)
+        return {"pdb": pdb_text}
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@app.get("/docking")
+async def get_docking(upload_id: str) -> dict:
+    try:
+        pdb_text = get_service().get_docking_pdb(upload_id)
+        return {"pdb": pdb_text}
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc

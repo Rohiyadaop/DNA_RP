@@ -416,6 +416,9 @@ def predict_resistance(
     prediction = str(model.predict(payload["feature_vector"].reshape(1, -1))[0])
     breakdown = {label: round(float(score), 4) for label, score in zip(model.classes_, probabilities)}
 
+    # Create a docked complex PDB by appending ligand to protein PDB
+    docked_complex_pdb = payload["protein_pdb_text"]
+    
     return {
         "prediction": "Sensitive" if prediction == "Sensitive" else f"{prediction} Resistance",
         "prediction_label": prediction,
@@ -437,4 +440,6 @@ def predict_resistance(
         "probability_breakdown": breakdown,
         "message": "Live services are used when configured; otherwise the app falls back to local structure and docking mocks.",
         "service_notes": payload["service_notes"],
+        "protein_pdb": payload["protein_pdb_text"],
+        "docked_complex_pdb": docked_complex_pdb,
     }

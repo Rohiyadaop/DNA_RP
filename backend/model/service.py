@@ -71,6 +71,13 @@ class ResistancePredictionService:
             ph=ph,
             medium=medium,
         )
+        
+        # Store PDB data for visualization
+        structure_path = self.upload_dir / f"{upload_id}_structure.pdb"
+        docking_path = self.upload_dir / f"{upload_id}_docking.pdb"
+        structure_path.write_text(result["protein_pdb"], encoding="utf-8")
+        docking_path.write_text(result["docked_complex_pdb"], encoding="utf-8")
+        
         return {
             "prediction": result["prediction"],
             "confidence": result["confidence"],
@@ -90,4 +97,18 @@ class ResistancePredictionService:
             "binding_pose_preview": result["binding_pose_preview"],
             "probability_breakdown": result["probability_breakdown"],
             "message": result["message"],
+            "protein_pdb": result["protein_pdb"],
+            "docked_complex_pdb": result["docked_complex_pdb"],
         }
+
+    def get_structure_pdb(self, upload_id: str) -> str:
+        structure_path = self.upload_dir / f"{upload_id}_structure.pdb"
+        if not structure_path.exists():
+            raise FileNotFoundError(f"Structure PDB not found for upload ID: {upload_id}")
+        return structure_path.read_text(encoding="utf-8")
+
+    def get_docking_pdb(self, upload_id: str) -> str:
+        docking_path = self.upload_dir / f"{upload_id}_docking.pdb"
+        if not docking_path.exists():
+            raise FileNotFoundError(f"Docking PDB not found for upload ID: {upload_id}")
+        return docking_path.read_text(encoding="utf-8")
